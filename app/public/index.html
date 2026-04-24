@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order System</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Order Management</h1>
+
+  <div class="card">
+    <label>Product:</label>
+    <input id="product" placeholder="Enter product" />
+
+    <label>Quantity:</label>
+    <input id="quantity" type="number" placeholder="Enter quantity" />
+
+    <button id="submitOrder">Create Order</button>
+  </div>
+
+  <div class="card">
+    <h3>Status:</h3>
+    <p id="status">Idle</p>
+  </div>
+
+  <div class="card error" id="error" style="display:none;"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
